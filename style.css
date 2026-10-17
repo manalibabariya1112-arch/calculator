@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calc-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 360px;
+}
+
+h2 {
+    color: #1e293b;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.result-box {
+    margin-top: 24px;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    text-align: center;
+}
+
+.result-box h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #1e40af;
+}

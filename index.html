@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Web Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calc-card">
+    <h2>Standard Calculator</h2>
+
+    <form action="/calculate" method="POST">
+        <div class="form-group">
+            <label for="num1">First Number</label>
+            <input type="number" step="any" id="num1" name="num1" required value="{{NUM1}}">
+        </div>
+
+        <div class="form-group">
+            <label for="operation">Operation</label>
+            <select id="operation" name="operation">
+                <option value="add" {{SEL_ADD}}>Addition (+)</option>
+                <option value="subtract" {{SEL_SUB}}>Subtraction (-)</option>
+                <option value="multiply" {{SEL_MUL}}>Multiplication (×)</option>
+                <option value="divide" {{SEL_DIV}}>Division (÷)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="num2">Second Number</label>
+            <input type="number" step="any" id="num2" name="num2" required value="{{NUM2}}">
+        </div>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div class="result-box">
+        <h3>Result: {{RESULT}}</h3>
+    </div>
+</div>
+
+</body>
+</html>
